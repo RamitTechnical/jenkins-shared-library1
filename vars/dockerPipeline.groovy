@@ -41,7 +41,7 @@ def call(Map config = [:]) {
             stage('Deploy') {
                 steps {
                     echo "Deploying Application"
-                    sh "docker-compose down && docker-compose up -d"
+                    sh "docker compose down && docker compose up -d"
                 }
             }
         }
